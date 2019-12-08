@@ -1,6 +1,10 @@
 {
   "name": "cra-template-redux-test",
-  "version": "1.1.0",
+  "version": "1.2.0",
+  "scripts": {
+    "prettify": "prettier './template/src/**/*.js' --write",
+    "lint": "eslint './template/src/**/*.js'"
+  },
   "keywords": [
     "react",
     "create-react-app",
@@ -22,5 +26,17 @@
   "files": [
     "template",
     "template.json"
-  ]
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1"
+  }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectors, actions } from './ducks/counter';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useSelector, useDispatch } from "react-redux";
+import { selectors, actions } from "./ducks/counter";
 
 function App() {
   const count = useSelector(selectors.selectCount);
@@ -24,9 +24,21 @@ function App() {
           Learn Redux
         </a>
         <p className="App-counter">
-          <button className="App-counter-button" aria-label="Increment value" onClick={() => dispatch(actions.increment())}>+</button>
+          <button
+            className="App-counter-button"
+            aria-label="Increment value"
+            onClick={() => dispatch(actions.increment())}
+          >
+            +
+          </button>
           <div className="App-counter-value">{count}</div>
-          <button className="App-counter-button" aria-label="Decrement value" onClick={() => dispatch(actions.decrement())}>-</button>
+          <button
+            className="App-counter-button"
+            aria-label="Decrement value"
+            onClick={() => dispatch(actions.decrement())}
+          >
+            -
+          </button>
         </p>
       </header>
     </div>

@@ -1,20 +1,19 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState: 0,
   reducers: {
     increment: state => state + 1,
     decrement: state => state - 1
   }
-})
+});
 
-const selectCount = (state) => state.counter;
+const selectCount = state => state.counter;
 
 const selectors = {
-  selectCount,
-}
+  selectCount
+};
 
 const { actions } = slice;
 
